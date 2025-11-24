@@ -1,0 +1,9 @@
+com\pms\config\DBConnection.class
+com\pms\config\servlet\AddEventServlet.class
+com\pms\config\servlet\DeleteEventServlet.class
+com\pms\config\servlet\HelloServlet.class
+com\pms\config\servlet\TestDBServlet.class
+com\pms\config\model\Event.class
+com\pms\config\model\dao\EventDAO.class
+com\pms\config\servlet\AddEventFormServlet.class
+com\pms\config\servlet\EventListServlet.class
