@@ -98,35 +98,6 @@ CREATE TABLE events (
    ```
    http://localhost:8080/backend/events
    ```
-
----
-
-## 📸 Screenshots
-
-### 🖥️ 1. Events Dashboard (Premium UI)
-![Events Dashboard](screenshots/events-dashboard.png)
-
----
-
-### ➕ 2. Add Event Form (Modern UI)
-![Add Event Form](screenshots/add-event-form.png)
-
----
-
-### ✔️ 3. Successfully Added Event
-![Success Added](screenshots/success-added.png)
-
----
-
-### 🗑️ 4. Delete Confirmation Popup
-![Delete Confirmation](screenshots/delete-confirmation.png)
-
----
-
-### ✔️ 5. Updated Events List After Operations
-![Updated Events List](screenshots/updated-events.png)
-
-
 ---
 
 ## 📄 License  
