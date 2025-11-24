@@ -78,6 +78,25 @@ CREATE TABLE events (
     description TEXT
 );
 ```
+------## Status
+
+---------
+-----## 🔧 Backend Status — Completed ✔
+
+The entire backend of the Event Management System is fully implemented and tested.  
+All server-side logic has been built using **Java Servlets**, **JSP**, **DAO Pattern**, and **MariaDB**.
+
+### ✔ Completed Backend Modules:
+- Add Event (POST)
+- View Events (GET)
+- Delete Event (GET)
+- DAO Layer for Database Operations
+- Database Connectivity (MariaDB/MySQL)
+- MVC Folder Structure
+- Form Validation + Success/Error Messages
+- Integration with JSP Frontend
+
+The backend is now stable, functional, and ready for deployment & frontend integration.
 
 ---
 
