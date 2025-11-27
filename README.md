@@ -14,27 +14,27 @@ This project allows users to **Add, View, and Delete** events in a structured an
 
 ## 🚀 Features
 
-### ✅ Add Event  
+###  Add Event  
 Fill out a form to create a new event with details like:
 - Event Name  
 - Location  
 - Date  
 - Description  
 
-### ✅ View Events  
+### View Events  
 Shows all events from the database in a clean UI table.
 
-### ✅ Delete Event  
+###  Delete Event  
 Delete any event with a confirmation popup.
 
-### 🎨 Modern UI  
+###  Modern UI  
 - Fully redesigned premium UI using JSP + CSS  
 - Dark theme with gradients  
 - Smooth buttons & modern cards
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 | Component | Technology |
 |----------|------------|
@@ -67,7 +67,7 @@ EVENT-MANAGEMENT-SYSTEM/
 
 ---
 
-## 🗄️ Database Schema (MariaDB)
+##  Database Schema (MariaDB)
 
 ```sql
 CREATE TABLE events (
@@ -81,12 +81,12 @@ CREATE TABLE events (
 ------## Status
 
 ---------
------## 🔧 Backend Status — Completed ✔
+-----##  Backend Status — Completed ✔
 
 The entire backend of the Event Management System is fully implemented and tested.  
 All server-side logic has been built using **Java Servlets**, **JSP**, **DAO Pattern**, and **MariaDB**.
 
-### ✔ Completed Backend Modules:
+### Completed Backend Modules:
 - Add Event (POST)
 - View Events (GET)
 - Delete Event (GET)
@@ -100,7 +100,7 @@ The backend is now stable, functional, and ready for deployment & frontend integ
 
 ---
 
-## ▶️ How to Run This Project
+##  How to Run This Project
 
 1. Install **Java 17+**
 2. Install **Apache Tomcat 10+**
