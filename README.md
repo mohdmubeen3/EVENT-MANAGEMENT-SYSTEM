@@ -31,8 +31,43 @@ Delete any event with a confirmation popup.
 - Fully redesigned premium UI using JSP + CSS  
 - Dark theme with gradients  
 - Smooth buttons & modern cards
+- 📝 Event Registration & Booking
 
----
+## Event Registration & Booking
+
+- Users can register for an event by completing a booking form.
+- During registration, the user specifies the number of slots required.
+
+Upon successful booking:
+- he user is registered for the selected event
+- A confirmation email is sent to the registered email address 📧
+-  Event slot availability is updated automatically
+
+## Slot-Based Event Management
+
+Each event is created with a fixed number of slots
+- After every successful booking, the available slots are reduced dynamically
+- Once all slots are occupied:
+- Further registrations are automatically restricted
+- New users cannot book the event
+- This ensures fair and controlled event participation.
+
+## Advanced Event Filtering & Search
+
+- Events can be searched and filtered based on:
+- Event Name
+- Total Slots
+- Booked Slots
+- Available Slots
+- Fully Booked Events
+This improves usability and helps users find suitable events efficiently.
+
+## Booked Users Overview
+- A dedicated page displays:
+- Registered users for each event
+- Number of slots booked per user
+- Associated event details
+- This feature helps administrators track event participation effectively.
 
 ## Tech Stack
 
