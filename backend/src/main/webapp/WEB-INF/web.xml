@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="https://jakarta.ee/xml/ns/jakartaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee
+                             https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd"
+         version="5.0">
+
+    <display-name>Event Management Backend</display-name>
+
+    <!-- EVENTS LIST (GET /events) -->
+    <servlet>
+        <servlet-name>EventListServlet</servlet-name>
+        <servlet-class>com.pms.config.servlet.EventListServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>EventListServlet</servlet-name>
+        <url-pattern>/events</url-pattern>
+    </servlet-mapping>
+
+    <!-- ADD EVENT FORM (GET /add-event-form) -->
+    <servlet>
+        <servlet-name>AddEventFormServlet</servlet-name>
+        <servlet-class>com.pms.config.servlet.AddEventFormServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AddEventFormServlet</servlet-name>
+        <url-pattern>/add-event-form</url-pattern>
+    </servlet-mapping>
+
+    <!-- ADD EVENT SUBMIT (POST /add-event) -->
+    <servlet>
+        <servlet-name>AddEventServlet</servlet-name>
+        <servlet-class>com.pms.config.servlet.AddEventServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AddEventServlet</servlet-name>
+        <url-pattern>/add-event</url-pattern>
+    </servlet-mapping>
+
+    <!-- DELETE EVENT (GET /events/delete?id=...) -->
+    <servlet>
+        <servlet-name>DeleteEventServlet</servlet-name>
+        <servlet-class>com.pms.config.servlet.DeleteEventServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DeleteEventServlet</servlet-name>
+        <url-pattern>/events/delete</url-pattern>
+    </servlet-mapping>
+
+    <!-- BOOK EVENT FORM (GET /book-event-form?id=...) -->
+    <servlet>
+        <servlet-name>BookEventFormServlet</servlet-name>
+        <servlet-class>com.pms.config.servlet.BookEventFormServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>BookEventFormServlet</servlet-name>
+        <url-pattern>/book-event-form</url-pattern>
+    </servlet-mapping>
+
+    <!-- BOOK EVENT SUBMIT (POST /book-event) -->
+    <servlet>
+        <servlet-name>BookEventServlet</servlet-name>
+        <servlet-class>com.pms.config.servlet.BookEventServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>BookEventServlet</servlet-name>
+        <url-pattern>/book-event</url-pattern>
+    </servlet-mapping>
+
+    <!-- BOOKINGS LIST (GET /bookings) -->
+    <servlet>
+        <servlet-name>BookingListServlet</servlet-name>
+        <servlet-class>com.pms.config.servlet.BookingListServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>BookingListServlet</servlet-name>
+        <url-pattern>/bookings</url-pattern>
+    </servlet-mapping>
+
+    <!-- CANCEL BOOKING (GET /bookings/cancel?id=...) -->
+    <servlet>
+        <servlet-name>CancelBookingServlet</servlet-name>
+        <servlet-class>com.pms.config.servlet.CancelBookingServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CancelBookingServlet</servlet-name>
+        <url-pattern>/bookings/cancel</url-pattern>
+    </servlet-mapping>
+
+    <!-- EXPORT BOOKINGS CSV (GET /bookings/export) -->
+    <servlet>
+        <servlet-name>ExportBookingsServlet</servlet-name>
+        <servlet-class>com.pms.config.servlet.ExportBookingsServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ExportBookingsServlet</servlet-name>
+        <url-pattern>/bookings/export</url-pattern>
+    </servlet-mapping>
+
+    <!-- OPTIONAL DEBUG SERVLETS -->
+    <servlet>
+        <servlet-name>TestDBServlet</servlet-name>
+        <servlet-class>com.pms.config.servlet.TestDBServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>TestDBServlet</servlet-name>
+        <url-pattern>/testdb</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>HelloServlet</servlet-name>
+        <servlet-class>com.pms.config.servlet.HelloServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>HelloServlet</servlet-name>
+        <url-pattern>/hello</url-pattern>
+    </servlet-mapping>
+
+    <!-- WELCOME PAGE -->
+    <welcome-file-list>
+        <welcome-file>events</welcome-file>
+    </welcome-file-list>
+
+</web-app>
