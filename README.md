@@ -1,22 +1,22 @@
-##🎯 Event Management System
-#Java Servlets | JSP | MariaDB | Apache Tomcat
+# 🎯 Event Management System
+# Java Servlets | JSP | MariaDB | Apache Tomcat
  
-##📌 Project Overview
+# 📌 Project Overview
 -The Event Management System is a Java-based web application that allows users to:
-#View events
+# View events
 -Book events with slot-based control
-#Cancel bookings
+# Cancel bookings
 -Receive email confirmation on successful booking
-#The application is built using 
+# The application is built using 
 - Java Servlets
 -JSP
 -DAO Pattern
 -MariaDB
 -it is following a clean MVC architecture, and is deployed on Apache Tomcat.
 -----------------------------------------------------------------------------------------
-##🚀 Features
-## Event Management
-#Add new events with:
+# 🚀 Features
+# Event Management
+# Add new events with:
 -Event Name
 -Location
 -Event Date
@@ -24,7 +24,7 @@
 -Total Slots
 -View all events in a dashboard
 -Delete events with confirmation popup
-## Event Booking
+# Event Booking
 - Users can book an event by providing:
 - Email ID
 - Number of seats required
@@ -72,21 +72,21 @@
 # 📁 Project Folder Structure
 ----------------------------------------------------------------------------
 EVENT-MANAGEMENT-SYSTEM/
-│
-├── backend/
-│   ├── src/main/java/com/pms/
-│   │   ├── servlet/   (All Servlets)
-│   │   ├── model/     (Model Classes)
-│   │   └── dao/       (DAO Layer)
-│   │
-│   ├── src/main/webapp/
-│   │   ├── WEB-INF/views/ (JSP Pages)
-│   │   └── web.xml
-│   │
-│   └── pom.xml
-│
-├── screenshots/
-└── README.md
+- │
+- ├── backend/
+- │   ├── src/main/java/com/pms/
+- │   │   ├── servlet/   (All Servlets)
+- │   │   ├── model/     (Model Classes)
+- │   │   └── dao/       (DAO Layer)
+- │   │
+- │   ├── src/main/webapp/
+- │   │   ├── WEB-INF/views/ (JSP Pages)
+- │   │   └── web.xml
+- │   │
+- │   └── pom.xml
+- │
+- ├── screenshots/
+- └── README.md
 --------------------------------------------------------------------------------------------
 ## 🗄 Database Schema (Implemented)
 # events
