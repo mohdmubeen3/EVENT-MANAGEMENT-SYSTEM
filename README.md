@@ -92,44 +92,44 @@ EVENT-MANAGEMENT-SYSTEM/
 # events
 - CREATE TABLE events (
   -    id INT PRIMARY KEY AUTO_INCREMENT,
--   name VARCHAR(100) NOT NULL,
- -   location VARCHAR(100) NOT NULL,
--    event_date DATE NOT NULL,
--    description VARCHAR(255),
--    slots INT NOT NULL
--);
+  -   name VARCHAR(100) NOT NULL,
+  -   location VARCHAR(100) NOT NULL,
+  -    event_date DATE NOT NULL,
+  -    description VARCHAR(255),
+  -    slots INT NOT NULL
+- );
 ------------------------------------
 # bookings
-CREATE TABLE bookings (
-    id INT PRIMARY KEY AUTO_INCREMENT,
-    event_id INT NOT NULL,
-    event_name VARCHAR(100) NOT NULL,
-    user_email VARCHAR(150) NOT NULL,
-    seats INT NOT NULL,
-    booking_time TIMESTAMP DEFAULT CURRENT_TIMESTAMP
-);
+- CREATE TABLE bookings (
+    - id INT PRIMARY KEY AUTO_INCREMENT,
+    -  event_id INT NOT NULL,
+    - event_name VARCHAR(100) NOT NULL,
+    - user_email VARCHAR(150) NOT NULL,
+    - seats INT NOT NULL,
+    - booking_time TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+- );
 -------------------------------------------------------------
 # users
-CREATE TABLE users (
-    id INT PRIMARY KEY AUTO_INCREMENT,
-    name VARCHAR(100),
-    email VARCHAR(100),
-    password VARCHAR(100)
-);
+- CREATE TABLE users (
+   - id INT PRIMARY KEY AUTO_INCREMENT,
+   - name VARCHAR(100),
+   - email VARCHAR(100),
+   - password VARCHAR(100)
+- );
 --------------------------------------------------
 # ▶ How to Run This Project
---Install Java 17+
---Install Apache Tomcat 10+
---Install MariaDB / MySQL
---Create the database and tables using the schema above
---Open the project in VS Code / IntelliJ / Eclipse
--Run:
---mvn clean package
---Copy the generated .war file to:
--tomcat/webapps/
--Start Tomcat
--Open in browser:
---http://localhost:8080/backend/events
+- Install Java 17+
+- Install Apache Tomcat 10+
+- Install MariaDB / MySQL
+- Create the database and tables using the schema above
+- Open the project in VS Code / IntelliJ / Eclipse
+- Run:
+- mvn clean package
+- Copy the generated .war file to:
+- tomcat/webapps/
+- Start Tomcat
+- Open in browser:
+- http://localhost:8080/backend/events
 ----------------------------------------------------------------
 # 📄 License
 -This project is developed for academic purposes at Galgotias University.
