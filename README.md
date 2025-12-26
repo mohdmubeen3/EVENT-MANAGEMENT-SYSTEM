@@ -1,162 +1,149 @@
 # 🎯 Event Management System  
-### Java Servlets + JSP + MariaDB | Semester 3 Project (B.Tech CSE AI–ML)
+🎉 Event Management System
+Java Servlets · JSP · MariaDB · Apache Tomcat
+Semester 3 Project – B.Tech CSE (AI–ML), Galgotias University
+The Event Management System is a Java-based web application that allows users to view events, book events with slot-based control, cancel bookings, and receive email confirmation for successful registrations.
+The project is built using Java Servlets, JSP, DAO Pattern, and MariaDB, following a clean MVC architecture and deployed on Apache Tomcat.
+🚀 Features
+✅ Event Management
+Add new events with:
+Event Name
+Location
+Event Date
+Description
+Total Slots
+View all events in a dashboard
+Delete events with confirmation popup
+📝 Event Booking
+Users can book an event by providing:
+Email ID
+Number of seats required
+On successful booking:
+Booking details are stored in the database
+Available slots are reduced automatically
+A confirmation email is sent to the user 📧
+❌ Booking Cancellation
+Users can cancel an existing booking
+On cancellation:
+Booked seats are released
+Available slots for the event are incremented automatically
+Ensures fair usage and prevents slot blocking
+🎟 Slot-Based Availability Control
+Each event has a fixed number of slots
+Slots decrease when a booking is made
+Slots increase when a booking is cancelled
+When available slots reach zero, further bookings are restricted
+👥 Booked Users Overview
+Admin can view:
+Users registered for each event
+Number of seats booked by each user
+Booking time details
+Helps track event participation effectively
+🎨 User Interface
+JSP-based modern UI
+Dark theme with gradient styling
+Clean forms and tables
+Simple and user-friendly navigation
+🛠 Tech Stack
+Component
+Technology
+Frontend
+JSP, HTML, CSS
+Backend
+Java Servlets
+Database
+MariaDB / MySQL
+Pattern
+DAO (Data Access Object)
+Server
+Apache Tomcat 10+
+Build Tool
+Maven
+📸 Screenshots
+Event Dashboard
+�
+Add Event Form
+�
+Event Booking Form
+�
+Slot Availability
+�
+Delete Confirmation
+�
+Updated Events List
+�
+📁 Project Folder Structure
+Copy code
 
-The **Event Management System** is a simple and efficient CRUD web application built using:  
-- **Java Servlets (Backend Logic)**  
-- **JSP (Frontend Rendering)**  
-- **DAO Pattern (Database Operations)**  
-- **MariaDB / MySQL (Database Storage)**  
-- **Apache Tomcat (Server Deployment)**  
-
-This project allows users to **Add, View, and Delete** events in a structured and visually modern interface.
-
----
-
-## 🚀 Features
-
-###  Add Event  
-Fill out a form to create a new event with details like:
-- Event Name  
-- Location  
-- Date  
-- Description  
-
-### View Events  
-Shows all events from the database in a clean UI table.
-
-###  Delete Event  
-Delete any event with a confirmation popup.
-
-###  Modern UI  
-- Fully redesigned premium UI using JSP + CSS  
-- Dark theme with gradients  
-- Smooth buttons & modern cards
-- 📝 Event Registration & Booking
-
-## Event Registration & Booking
-
-- Users can register for an event by completing a booking form.
-- During registration, the user specifies the number of slots required.
-
-Upon successful booking:
-- he user is registered for the selected event
-- A confirmation email is sent to the registered email address 📧
--  Event slot availability is updated automatically
-
-## Slot-Based Event Management
-
-Each event is created with a fixed number of slots
-- After every successful booking, the available slots are reduced dynamically
-- Once all slots are occupied:
-- Further registrations are automatically restricted
-- New users cannot book the event
-- This ensures fair and controlled event participation.
-
-## Advanced Event Filtering & Search
-
-- Events can be searched and filtered based on:
-- Event Name
-- Total Slots
-- Booked Slots
-- Available Slots
-- Fully Booked Events
-This improves usability and helps users find suitable events efficiently.
-
-## Booked Users Overview
-- A dedicated page displays:
-- Registered users for each event
-- Number of slots booked per user
-- Associated event details
-- This feature helps administrators track event participation effectively.
-
-## Tech Stack
-
-| Component | Technology |
-|----------|------------|
-| Frontend | JSP + HTML + CSS |
-| Backend | Java Servlets |
-| Database | MariaDB / MySQL |
-| Pattern Used | DAO (Data Access Object) |
-| Server | Apache Tomcat 10+ |
-| Build Tool | Maven |
-
----
-
-## 📁 Project Folder Structure
-
-```
 EVENT-MANAGEMENT-SYSTEM/
 │
 ├── backend/
-│   ├── src/main/java/com/pms/config/
-│   │   ├── servlet/ (All Servlets)
-│   │   ├── model/   (Event Model)
-│   │   └── dao/     (EventDAO)
+│   ├── src/main/java/com/pms/
+│   │   ├── servlet/   (All Servlets)
+│   │   ├── model/     (Model Classes)
+│   │   └── dao/       (DAO Layer)
+│   │
 │   ├── src/main/webapp/
 │   │   ├── WEB-INF/views/ (JSP Pages)
 │   │   └── web.xml
-│   └── pom.xml (Maven configuration)
+│   │
+│   └── pom.xml
 │
+├── screenshots/
 └── README.md
-```
-
----
-
-##  Database Schema (MariaDB)
-
-```sql
+🗄 Database Schema (Implemented)
+events
+Copy code
+Sql
 CREATE TABLE events (
     id INT PRIMARY KEY AUTO_INCREMENT,
-    name VARCHAR(255),
-    location VARCHAR(255),
-    eventDate DATE,
-    description TEXT
+    name VARCHAR(100) NOT NULL,
+    location VARCHAR(100) NOT NULL,
+    event_date DATE NOT NULL,
+    description VARCHAR(255),
+    slots INT NOT NULL
 );
-```
-------## Status
+bookings
+Copy code
+Sql
+CREATE TABLE bookings (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    event_id INT NOT NULL,
+    event_name VARCHAR(100) NOT NULL,
+    user_email VARCHAR(150) NOT NULL,
+    seats INT NOT NULL,
+    booking_time TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+users
+Copy code
+Sql
+CREATE TABLE users (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    name VARCHAR(100),
+    email VARCHAR(100),
+    password VARCHAR(100)
+);
+▶ How to Run This Project
+Install Java 17+
+Install Apache Tomcat 10+
+Install MariaDB / MySQL
+Create the database and tables using the schema above
+Open the project in VS Code / IntelliJ / Eclipse
+Run:
+Copy code
+Bash
+mvn clean package
+Copy the generated .war file to:
+Copy code
 
----------
------##  Backend Status — Completed ✔
+tomcat/webapps/
+Start Tomcat
+Open in browser:
+Copy code
 
-The entire backend of the Event Management System is fully implemented and tested.  
-All server-side logic has been built using **Java Servlets**, **JSP**, **DAO Pattern**, and **MariaDB**.
-
-### Completed Backend Modules:
-- Add Event (POST)
-- View Events (GET)
-- Delete Event (GET)
-- DAO Layer for Database Operations
-- Database Connectivity (MariaDB/MySQL)
-- MVC Folder Structure
-- Form Validation + Success/Error Messages
-- Integration with JSP Frontend
-
-The backend is now stable, functional, and ready for deployment & frontend integration.
-
----
-
-##  How to Run This Project
-
-1. Install **Java 17+**
-2. Install **Apache Tomcat 10+**
-3. Install **MariaDB / MySQL**
-4. Import the SQL table shown above
-5. Open the project in **VS Code / IntelliJ / Eclipse**
-6. Run Maven:
-   ```
-   mvn clean package
-   ```
-7. Copy WAR file to Tomcat `webapps/`
-8. Start Tomcat
-9. Open in browser:
-   ```
-   http://localhost:8080/backend/events
-   ```
----
-
-## 📄 License  
-This project is created for academic purposes at **Galgotias University**.
-
----
-
-✨ _Thank you for checking out the project!_
+http://localhost:8080/backend/events
+📄 License
+This project is developed for academic purposes at Galgotias University.
+✨ Thank you for checking out the project!
+⭐ Feel free to star the repository.
+ 
