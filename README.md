@@ -2,28 +2,28 @@
 # Java Servlets | JSP | MariaDB | Apache Tomcat
  
 # 📌 Project Overview
--The Event Management System is a Java-based web application that allows users to:
+- The Event Management System is a Java-based web application that allows users to:
 # View events
--Book events with slot-based control
+- Book events with slot-based control
 # Cancel bookings
--Receive email confirmation on successful booking
+- Receive email confirmation on successful booking
 # The application is built using 
 - Java Servlets
--JSP
--DAO Pattern
--MariaDB
--it is following a clean MVC architecture, and is deployed on Apache Tomcat.
+- JSP
+- DAO Pattern
+- MariaDB
+- it is following a clean MVC architecture, and is deployed on Apache Tomcat.
 -----------------------------------------------------------------------------------------
 # 🚀 Features
 # Event Management
 # Add new events with:
--Event Name
--Location
--Event Date
--Description
--Total Slots
--View all events in a dashboard
--Delete events with confirmation popup
+- Event Name
+- Location
+- Event Date
+- Description
+- Total Slots
+- View all events in a dashboard
+- Delete events with confirmation popup
 # Event Booking
 - Users can book an event by providing:
 - Email ID
@@ -35,7 +35,7 @@
   # Booking Cancellation
 - Users can cancel an existing booking
   # On cancellation:
-  -Booked seats are released
+  - Booked seats are released
   - Available slots are incremented automatically
   - Prevents slot blocking and ensures fair usage
 # lot-Based Availability Control
@@ -88,18 +88,18 @@ EVENT-MANAGEMENT-SYSTEM/
 - ├── screenshots/
 - └── README.md
 --------------------------------------------------------------------------------------------
-## 🗄 Database Schema (Implemented)
+# 🗄 Database Schema (Implemented)
 # events
-CREATE TABLE events (
-    id INT PRIMARY KEY AUTO_INCREMENT,
-    name VARCHAR(100) NOT NULL,
-    location VARCHAR(100) NOT NULL,
-    event_date DATE NOT NULL,
-    description VARCHAR(255),
-    slots INT NOT NULL
-);
+- CREATE TABLE events (
+  -    id INT PRIMARY KEY AUTO_INCREMENT,
+-   name VARCHAR(100) NOT NULL,
+ -   location VARCHAR(100) NOT NULL,
+-    event_date DATE NOT NULL,
+-    description VARCHAR(255),
+-    slots INT NOT NULL
+-);
 ------------------------------------
-## bookings
+# bookings
 CREATE TABLE bookings (
     id INT PRIMARY KEY AUTO_INCREMENT,
     event_id INT NOT NULL,
@@ -109,7 +109,7 @@ CREATE TABLE bookings (
     booking_time TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 -------------------------------------------------------------
-## users
+# users
 CREATE TABLE users (
     id INT PRIMARY KEY AUTO_INCREMENT,
     name VARCHAR(100),
@@ -117,7 +117,7 @@ CREATE TABLE users (
     password VARCHAR(100)
 );
 --------------------------------------------------
-## ▶ How to Run This Project
+# ▶ How to Run This Project
 --Install Java 17+
 --Install Apache Tomcat 10+
 --Install MariaDB / MySQL
