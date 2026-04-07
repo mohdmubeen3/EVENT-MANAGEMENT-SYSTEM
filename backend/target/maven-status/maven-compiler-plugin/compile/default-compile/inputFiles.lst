@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 C:\Users\dell\OneDrive\Desktop\java project\EVENT_MANAGEMENT_SYSTEM\backend\src\main\java\com\pms\config\DBConnection.java
 C:\Users\dell\OneDrive\Desktop\java project\EVENT_MANAGEMENT_SYSTEM\backend\src\main\java\com\pms\config\EmailUtil.java
 C:\Users\dell\OneDrive\Desktop\java project\EVENT_MANAGEMENT_SYSTEM\backend\src\main\java\com\pms\config\model\Booking.java
@@ -15,3 +16,22 @@ C:\Users\dell\OneDrive\Desktop\java project\EVENT_MANAGEMENT_SYSTEM\backend\src\
 C:\Users\dell\OneDrive\Desktop\java project\EVENT_MANAGEMENT_SYSTEM\backend\src\main\java\com\pms\config\servlet\ExportBookingsServlet.java
 C:\Users\dell\OneDrive\Desktop\java project\EVENT_MANAGEMENT_SYSTEM\backend\src\main\java\com\pms\config\servlet\HelloServlet.java
 C:\Users\dell\OneDrive\Desktop\java project\EVENT_MANAGEMENT_SYSTEM\backend\src\main\java\com\pms\config\servlet\TestDBServlet.java
+=======
+C:\Users\dell\OneDrive\Desktop\java project\EVENT_MANAGEMENT_SYSTEM\backend\src\main\java\com\pms\config\DBConnection.java
+C:\Users\dell\OneDrive\Desktop\java project\EVENT_MANAGEMENT_SYSTEM\backend\src\main\java\com\pms\config\EmailUtil.java
+C:\Users\dell\OneDrive\Desktop\java project\EVENT_MANAGEMENT_SYSTEM\backend\src\main\java\com\pms\config\model\Booking.java
+C:\Users\dell\OneDrive\Desktop\java project\EVENT_MANAGEMENT_SYSTEM\backend\src\main\java\com\pms\config\model\dao\BookingDAO.java
+C:\Users\dell\OneDrive\Desktop\java project\EVENT_MANAGEMENT_SYSTEM\backend\src\main\java\com\pms\config\model\dao\EventDAO.java
+C:\Users\dell\OneDrive\Desktop\java project\EVENT_MANAGEMENT_SYSTEM\backend\src\main\java\com\pms\config\model\Event.java
+C:\Users\dell\OneDrive\Desktop\java project\EVENT_MANAGEMENT_SYSTEM\backend\src\main\java\com\pms\config\servlet\AddEventFormServlet.java
+C:\Users\dell\OneDrive\Desktop\java project\EVENT_MANAGEMENT_SYSTEM\backend\src\main\java\com\pms\config\servlet\AddEventServlet.java
+C:\Users\dell\OneDrive\Desktop\java project\EVENT_MANAGEMENT_SYSTEM\backend\src\main\java\com\pms\config\servlet\BookEventFormServlet.java
+C:\Users\dell\OneDrive\Desktop\java project\EVENT_MANAGEMENT_SYSTEM\backend\src\main\java\com\pms\config\servlet\BookEventServlet.java
+C:\Users\dell\OneDrive\Desktop\java project\EVENT_MANAGEMENT_SYSTEM\backend\src\main\java\com\pms\config\servlet\BookingListServlet.java
+C:\Users\dell\OneDrive\Desktop\java project\EVENT_MANAGEMENT_SYSTEM\backend\src\main\java\com\pms\config\servlet\CancelBookingServlet.java
+C:\Users\dell\OneDrive\Desktop\java project\EVENT_MANAGEMENT_SYSTEM\backend\src\main\java\com\pms\config\servlet\DeleteEventServlet.java
+C:\Users\dell\OneDrive\Desktop\java project\EVENT_MANAGEMENT_SYSTEM\backend\src\main\java\com\pms\config\servlet\EventListServlet.java
+C:\Users\dell\OneDrive\Desktop\java project\EVENT_MANAGEMENT_SYSTEM\backend\src\main\java\com\pms\config\servlet\ExportBookingsServlet.java
+C:\Users\dell\OneDrive\Desktop\java project\EVENT_MANAGEMENT_SYSTEM\backend\src\main\java\com\pms\config\servlet\HelloServlet.java
+C:\Users\dell\OneDrive\Desktop\java project\EVENT_MANAGEMENT_SYSTEM\backend\src\main\java\com\pms\config\servlet\TestDBServlet.java
+>>>>>>> 5b7ff224ce0bf46968bb8fc5093b52ee3ee5bf81
